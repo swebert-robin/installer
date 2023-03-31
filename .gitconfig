@@ -1,0 +1,8 @@
+[user]
+	name = Swebert Correa
+	email = swebert@robin.io
+	signingkey = 3233429E70B9BCA7
+[core]
+	editor = vim
+[commit]
+	gpgsign = true
