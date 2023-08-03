@@ -14,8 +14,8 @@ fi
 [ -f /etc/bashrc                ] && source /etc/bashrc
 [ -f /root/.fzf.bash            ] && source /root/.fzf.bash
 [ -f /root/bin/robinrc          ] && source /root/bin/robinrc
-[ -f /root/.git-prompt.sh       ] && source /root/.git-prompt.sh
-[ -f /root/.git-autocomplete.sh ] && source /root/.git-autocomplete.sh
+[ -f /root/.git-prompt.bash     ] && source /root/.git-prompt.bash
+[ -f /root/.git-completion.bash ] && source /root/.git-completion.bash
 [ -f /root/.wd                  ] && source /root/.wd
 [ -f /root/.bash_aliases        ] && source /root/.bash_aliases
 
