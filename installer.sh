@@ -23,7 +23,8 @@ wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-pro
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-wget https://raw.githubusercontent.com/swebert-robin/installer/main/.bashrc
-wget https://raw.githubusercontent.com/swebert-robin/installer/main/.gitconfig
-wget https://raw.githubusercontent.com/swebert-robin/installer/main/.tmux.conf
-wget https://raw.githubusercontent.com/swebert-robin/installer/main/.vimrc
+wget https://raw.githubusercontent.com/swebert-robin/installer/main/.bashrc -O .bashrc
+wget https://raw.githubusercontent.com/swebert-robin/installer/main/.bash_aliases -O .bash_aliases
+wget https://raw.githubusercontent.com/swebert-robin/installer/main/.gitconfig -O .gitconfig
+wget https://raw.githubusercontent.com/swebert-robin/installer/main/.tmux.conf -O .tmux.conf
+wget https://raw.githubusercontent.com/swebert-robin/installer/main/.vimrc -O .vimrc
