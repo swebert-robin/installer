@@ -11,6 +11,11 @@ yum install -y tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 yum install -y jq
+yum install -y tree
+
+yum install -y yum-utils
+yum-config-manager --add-repo=https://copr.fedorainfracloud.org/coprs/carlwgeorge/ripgrep/repo/epel-7/carlwgeorge-ripgrep-epel-7.repo
+yum install -y ripgrep
 
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
