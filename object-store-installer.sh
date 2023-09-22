@@ -3,6 +3,8 @@ unzip awscliv2.zip
 sudo ./aws/install
 rm -rf aws awscliv2.zip
 
+# aws configure
+
 tee -a /etc/yum.repos.d/google-cloud-sdk.repo << EOM
 [google-cloud-cli]
 name=Google Cloud CLI
@@ -15,3 +17,5 @@ EOM
 
 yum install -y libxcrypt-compat.x86_64
 yum install -y google-cloud-cli
+
+# gcloud auth login --cred-file=
