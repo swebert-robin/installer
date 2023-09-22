@@ -46,5 +46,5 @@ alias kdel="kubectl delete"
 alias kdelf="kubectl delete -f"
 alias kcp="kubectl cp"
 
-alias mc="/root/RobinSystems/object-store/minio/mc"
-
+alias gcs="gcloud storage"
+alias s3="aws s3"
