@@ -19,3 +19,6 @@ yum install -y libxcrypt-compat.x86_64
 yum install -y google-cloud-cli
 
 # gcloud auth login --cred-file=
+
+wget https://dl.min.io/client/mc/release/linux-ppc64le/mc -O /usr/local/bin/mc
+chmod +x /usr/local/bin/mc
