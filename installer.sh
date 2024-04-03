@@ -11,6 +11,7 @@ yum install -y tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 yum install -y jq
+pip3 install yq
 yum install -y tree
 
 yum install -y yum-utils
@@ -20,7 +21,11 @@ yum install -y ripgrep
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
-wget https://raw.github.com/troyxmccall/wd/master/setup/wd -O - | bash -s install
+wget https://raw.github.com/troyxmccall/wd/master/setup/wd -O /tmp/wd
+bash /tmp/wd -s install
+head -n -3 ~/.bash_profile > /tmp/bash_profile
+mv /tmp/bash_profile ~/.bash_profile
+rm -f /tmp/wd
 
 wget https://github.com/derailed/k9s/releases/download/v0.27.4/k9s_Linux_amd64.tar.gz -O /tmp/k9s.tar.gz
 tar -C /tmp -xzf /tmp/k9s.tar.gz
